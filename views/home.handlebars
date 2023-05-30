@@ -1,0 +1,17 @@
+<title>Página Inicial</title>
+
+<h1>Usuários Cadastrados: </h1>
+
+<a href="/cadastrar"><button>Cadastrar Novo Usuário</button></a>
+
+{{#each Usuarios}}
+
+<h2>Nome Completo: {{nome}} {{sobrenome}}</h2>
+<h3>Idade: {{idade}}</h3>
+
+<a href="/deletar/{{id}}"><button>Apagar Usuário</button></a>
+<a href="/alterar/{{id}}"><button>Atualizar Dados</button></a>
+<hr>
+
+{{/each}}
+
